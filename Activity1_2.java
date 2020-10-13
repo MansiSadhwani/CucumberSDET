@@ -76,11 +76,5 @@ public class LoginTestSteps {
 		driver.close();
 	}
 	
-	@When("^User enters \"(.*)\" and \"(.*)\"$")
-	public void enterCredentials(String username, String password)
-	{
-		driver.findElement(By.xpath("//input[@id='username']")).sendKeys(username);
-		driver.findElement(By.cssSelector("#password")).sendKeys(password);
-		driver.findElement(By.xpath("//button[@class='ui button']")).click();
-	}
+
 }
